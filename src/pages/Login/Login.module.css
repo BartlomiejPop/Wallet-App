@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.login_container {
+  max-width: 320px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.frame_icon,
+.title,
+.elipse1,
+.elipse2 {
+  display: none;
+}
+
+.login_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 114px;
+  margin-bottom: 40px;
+}
+
+.wallet_icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  padding-top: 4px;
+}
+.wallet_title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-top: 4px;
+  margin-left: 14px;
+}
+
+.input_container {
+  position: relative;
+  margin-bottom: 30px;
+  width: 100%;
+  font-family: 'circe', sans-serif;
+  font-size: 18px;
+  border-radius: 20px;
+  padding-bottom: 10px;
+}
+
+.input {
+  width: calc(100% - 60px);
+  padding: 8px 0px 8px 60px;
+  color: #000;
+  border: none;
+  font-size: 18px;
+  border-bottom: 1px solid #e0e0e0;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input:focus,
+.input:hover {
+  border-color: #007bff;
+}
+
+.input_icon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-76%);
+  left: 10px;
+}
+.input:focus::placeholder {
+  color: transparent;
+}
+
+.input::placeholder {
+  color: #bdbdbd;
+}
+
+.login_button {
+  width: 100%;
+  padding: 13px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.44;
+  font-weight: 400;
+  background-color: #24cca7;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login_button:hover,
+.login_button:focus {
+  background-color: #45a049;
+}
+
+.register_button {
+  width: 100%;
+  padding: 13px;
+  background-color: var(--background-gray);
+  font-size: 18px;
+  line-height: 1.44;
+  font-weight: 400;
+  border: 1px solid;
+  border-radius: 20px;
+  color: #4a56e2;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register_container {
+  margin-bottom: 52px;
+}
+
+/* //////////////////////////////// */
+
+@media screen and (min-width: 768px) {
+  .login_container {
+    display: flex;
+    flex-direction: column;
+    width: 533px;
+    height: 468px;
+    max-width: none;
+    background-color: white;
+    z-index: 0;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    border-radius: 20px;
+    margin-bottom: 196px;
+    padding: 0;
+  }
+
+  .input {
+    margin-left: 0;
+  }
+  .wrapper {
+    background-color: #e7eaf2;
+    z-index: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .box {
+    width: 533px;
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .title {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .frame_icon {
+    display: block;
+    width: 260px;
+    height: 250px;
+  }
+  .wallet_icon {
+    width: 38px;
+    height: 29px;
+    margin-right: 11px;
+  }
+  .elipse1 {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+  .elipse2 {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .login_title {
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  .input_container {
+    width: 410px;
+  }
+
+  .register_container {
+    font-family: 'circe', sans-serif;
+    width: 300px;
+  }
+  .login_button {
+    width: 300px;
+  }
+
+  .wallet_title {
+    font-size: 30px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  .wrapper {
+    flex-direction: row;
+  }
+
+  .login_container {
+    margin-top: 136px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .text {
+    font-size: 20px;
+  }
+  .frame_icon {
+    width: 435px;
+    height: 419px;
+    position: absolute;
+    z-index: 2;
+    left: 75px;
+  }
+
+  .title {
+    position: absolute;
+    bottom: 30px;
+    left: 200px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .elipse1 {
+    z-index: 0;
+    filter: blur(20px);
+  }
+
+  .elipse2 {
+    z-index: 0;
+  }
+}

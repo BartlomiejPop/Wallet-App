@@ -1,0 +1,114 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0 20px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  background-color: #fff;
+  list-style: none;
+  overflow: hidden;
+}
+
+.table {
+  margin-top: 32px;
+}
+
+.item {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  padding: 12px 20px;
+  border-bottom: 1px solid #dcdcdf;
+}
+
+.desktopItem {
+  border: none;
+  list-style: none;
+}
+
+.listKeys {
+  display: flex;
+  min-width: 704px;
+  justify-content: space-evenly;
+  background: #fff;
+  border-radius: 30px;
+  margin: 20px;
+  margin-bottom: 0;
+  height: 58px;
+  align-items: center;
+  padding: 0;
+}
+
+.buttonBox {
+  display: flex;
+  gap: 6px;
+}
+
+.listValues {
+  display: flex;
+  font-size: 18 px;
+  min-width: 704px;
+  justify-content: space-between;
+  margin: 0 60px;
+  height: 58px;
+  align-items: center;
+  list-style: none;
+  border-bottom: 1px solid #dcdcdf;
+}
+
+.desktopScreen {
+  height: 100%;
+  padding-left: 69px;
+  border-left: 1px solid#dbdadd;
+}
+
+@media (max-width: 810px) {
+  .listValues {
+    padding: 0;
+  }
+}
+
+.deleteBtn {
+  border-radius: 18px;
+  background-color: #24cca7;
+  border: none;
+  font-size: 15px;
+  padding: 4px 12px;
+  color: white;
+  cursor: pointer;
+}
+
+.editBtn {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.colorBox {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+}
+
+.listValuesDate {
+  width: 82px;
+}
+
+.listValuesCategory {
+  width: 105px;
+}
+
+.listValuesComment {
+  width: 75px;
+}
+
+.listValuesSum {
+  width: 0px;
+}

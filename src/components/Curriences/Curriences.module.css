@@ -1,0 +1,85 @@
+.walletBox {
+  padding: 0;
+  padding-bottom: 52px;
+  margin: 20px auto;
+  border-radius: 30px;
+  overflow: hidden;
+  list-style: none;
+  max-width: 336px;
+  background: #4a56e2;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .walletBox {
+    width: 336px;
+    margin: 0;
+    margin-left: 20px;
+    padding-bottom: 66px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .walletBox {
+    position: relative;
+    width: 393px;
+    min-height: 331px;
+    margin: 0;
+    margin-left: 20px;
+    padding-bottom: 0;
+    height: 100%;
+  }
+}
+
+.walletKeys {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 15px;
+  font-weight: 700;
+  align-items: center;
+  background: #6a74e5;
+}
+
+@media (min-width: 768px) {
+  .walletKeys {
+    padding: 0 15px;
+    height: 50px;
+    font-size: 18px;
+  }
+}
+
+.walletValues {
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+}
+
+.walletBg {
+  position: absolute;
+}
+
+@media (min-width: 1280px) {
+  .walletBg {
+    bottom: 0;
+  }
+}
+
+.walletValuesBox {
+  padding: 12px 0 0 0;
+  position: relative;
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+  .walletValuesBox {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .walletValuesBox {
+    position: static;
+  }
+}

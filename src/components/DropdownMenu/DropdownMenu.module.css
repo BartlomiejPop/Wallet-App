@@ -1,0 +1,94 @@
+/* Miesiąc i rok */
+
+.inputWithArrow {
+  display: flex;
+  border: 1px solid #000;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.statisticContent_input {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  margin: 15px 0px;
+}
+
+.selectMonthInput,
+.selectYearInput {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #e7eaf2;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.arrowIcon {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.selectMonthInput:focus,
+.selectYearInput:focus {
+  outline: none;
+  border-color: #555;
+}
+
+.optionList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0px 6px 15px 0px #0000001a;
+  width: 75%;
+}
+
+.selectedOptionLi {
+  padding: 10px 20px;
+  font-weight: 700;
+  background-color: #f9f9f9;
+  border-radius: 20px;
+}
+
+.optionLi {
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.optionLi:hover {
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .inputWithArrow {
+    height: 50px;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .statisticContent_input {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .selectMonthInput,
+  .selectYearInput {
+    background-color: #00000000;
+  }
+}

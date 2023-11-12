@@ -1,0 +1,39 @@
+.navigation {
+  padding: 12px 62px;
+  margin: 0;
+  display: flex;
+  gap: 44px;
+  justify-content: center;
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+  .navigation {
+    flex-direction: column;
+    gap: 12px;
+    padding: 0 20px;
+  }
+}
+
+.navigationIcon {
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .navigationIcon,
+  .navigationItem {
+    height: 27px;
+  }
+}
+
+.navigationName {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+  margin-left: 20px;
+}
+
+.link {
+  text-decoration: none;
+}

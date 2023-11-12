@@ -1,0 +1,75 @@
+.bg {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: -2;
+  background-color: #e7eaf2;
+  margin-top: -32px;
+}
+
+.tabletViewBox1 {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-around;
+  gap: 32px;
+}
+
+.tabletViewBox2 {
+  gap: 28px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tabletViewBox3 {
+  height: 182px;
+}
+
+.desktopViewBox1 {
+  display: flex;
+  border-right: 1px solid #e7e5f2;
+}
+
+.desktopViewBox2 {
+  margin-top: 40px;
+  margin-left: 16px;
+  margin-right: 69px;
+
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.balanceDesktop {
+  margin-left: -20px;
+}
+
+.elipse1 {
+  right: 0;
+  top: 0;
+  position: absolute;
+  z-index: -1;
+  filter: blur(24px);
+}
+
+.elipse2 {
+  filter: blur(24px);
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: -1;
+}
+.btn {
+  background-color: #24cca7;
+  position: fixed;
+  width: 44px;
+  height: 44px;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
+}
