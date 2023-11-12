@@ -3,12 +3,14 @@ import { useSelector } from 'react-redux'; // Importuje useSelector z react-redu
 import wallet from '../../icons/wallet.svg';
 import exit1 from '../../icons/exit1.svg';
 import css from './Header.module.css';
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
   const firstName = useSelector((state) => state.user.username);
+  const navigate = useNavigate();
   const handleClick = () => {
     localStorage.removeItem('accessToken');
-    window.location.reload();
+    navigate('/');
   };
 
   return (

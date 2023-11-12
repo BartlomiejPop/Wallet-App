@@ -207,6 +207,7 @@
     margin-left: 0;
   }
   .wrapper {
+    height: 100vh;
     background-color: #e7eaf2;
     z-index: 0;
     position: relative;
