@@ -1,13 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import styles from './Navigation.module.css';
-// import email from '../../icons/email.svg';
 import { NavLink, useLocation } from 'react-router-dom';
 import homeIconMobile from '../../icons/homeActiveMobile.svg';
 import curriencesIcon from '../../icons/currency.svg';
 import diagramIconMobile from '../../icons/diagramMobile.svg';
 import HomeIconTabletActive from '../../icons/HomeIconTabletActive.svg';
-// import statisticIconTablet from '../../icons/statisticsIconTablet.svg';
-// import Home from '../../pages/Home/Home';
 
 function Navigation() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -19,17 +16,14 @@ function Navigation() {
       setWindowWidth(window.innerWidth);
     };
 
-    // Dodaj listener do śledzenia zmiany szerokości ekranu
     window.addEventListener('resize', handleResize);
 
-    // Wywołaj funkcję po pierwszym renderowaniu komponentu
     handleResize();
 
-    // Usuń listener po zniszczeniu komponentu
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []); // Pusta tablica zależności, aby efekt useEffekt wykonał się tylko raz
+  }, []);
 
   const shouldRenderNavigationItem = windowWidth <= 768;
 
@@ -43,7 +37,6 @@ function Navigation() {
             if (match) {
               return true;
             }
-            // Sprawdź, czy jesteś na stronie "Home" lub podstronach "Home"
             return location.pathname.startsWith('/home');
           }}
         >

@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <BrowserRouter basename="Wallet--app">
+      <BrowserRouter basename="Wallet-App">
         <App />
       </BrowserRouter>
     </Provider>

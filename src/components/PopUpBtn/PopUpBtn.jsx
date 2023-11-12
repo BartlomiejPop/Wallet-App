@@ -6,13 +6,13 @@ class PopUpBtn extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showModal: false, // Dodajemy stan do zarządzania widocznością modala
+      showModal: false,
     };
   }
 
   toggleModal = () => {
     this.setState((prevState) => ({
-      showModal: !prevState.showModal, // Zmieniamy stan modalu przy każdym kliknięciu
+      showModal: !prevState.showModal,
     }));
   };
 
@@ -22,15 +22,7 @@ class PopUpBtn extends Component {
         <div className={styles.btn} onClick={this.toggleModal}>
           <img src={plus} className={styles.icon} alt="plus icon" />
         </div>
-
-        {/* Warunkowe renderowanie modala na podstawie stanu */}
-        {this.state.showModal && (
-          <div className={styles.modal}>
-            {/* Tutaj dodaj zawartość formularza edycji transakcji */}
-            {/* Na przykład możesz użyć wcześniejszego komponentu EditTransactionForm */}
-            {/* <EditTransactionForm /> */}
-          </div>
-        )}
+        {this.state.showModal && <div className={styles.modal}></div>}
       </div>
     );
   }
