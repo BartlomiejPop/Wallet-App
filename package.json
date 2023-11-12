@@ -4,7 +4,7 @@
   "private": true,
   "description": "",
   "main": "index.js",
-  "homepage": "https://BartlomiejPop.github.io/Wallet--app",
+  "homepage": "https://BartlomiejPop.github.io/Wallet-App",
   "dependencies": {
     "@reduxjs/toolkit": "1.9.6",
     "@testing-library/jest-dom": "5.17.0",
